@@ -1,0 +1,21 @@
+{
+    "name": "outeredge/edge-magento-module-multipledelivery",
+    "type": "magento-module",
+    "description": "<Simple Multiple Delivery Options Module by outer/edge",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "outer/edge",
+            "email": "support@outeredgeuk.com"
+        }
+    ],
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "extra": {
+        "map": [
+            ["app/code/local/Edge/Multidelivery", "app/code/local/Edge/Multidelivery"],
+            ["app/etc/modules/Edge_Multidelivery.xml", "app/etc/modules/Edge_Multidelivery.xml"]
+        ]
+    }
+}

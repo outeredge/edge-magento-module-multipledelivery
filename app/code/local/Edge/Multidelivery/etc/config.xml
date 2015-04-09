@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Edge_Multidelivery>
+            <version>0.1.0</version>
+        </Edge_Multidelivery>
+    </modules>
+    <global>
+        <helpers>
+            <multidelivery>
+                <class>Edge_Multidelivery_Helper</class>
+            </multidelivery>
+        </helpers>
+        <models>
+            <multidelivery>
+                <class>Edge_Multidelivery_Model</class>
+            </multidelivery>
+        </models>
+        <shipping>
+            <carriers>
+                <multidelivery>
+                    <class>Edge_Multidelivery_Model_Carrier_Multidelivery</class>
+                </multidelivery>
+            </carriers>
+        </shipping>
+    </global>
+    <default>
+        <carriers>
+            <multidelivery>
+                <model>multidelivery/carrier_multidelivery</model>
+            </multidelivery>
+        </carriers>
+    </default>
+</config>
