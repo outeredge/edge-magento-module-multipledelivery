@@ -58,7 +58,7 @@ class Edge_Multidelivery_Model_Carrier_Multidelivery
 
     protected function allowMethodToPostcode($postcodes, $condition)
     {
-        $shippingPostcode = Mage::getSingleton('checkout/session')->getQuote()->getShippingAddress()->getData('postcode');
+        $shippingPostcode = Mage::getSingleton('checkout/type_onepage')->getQuote()->getShippingAddress()->getData('postcode');
         if ($shippingPostcode){
             if($condition === 'allow'){
                 foreach ($postcodes as $postcode){
